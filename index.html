@@ -11,28 +11,54 @@
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Dosis:wght@400;700&family=Karla:wght@400;700&family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="style.css" />
 
     <title>Frontend Mentor | Age calculator app</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
     <div class="card">
       <div class="container">
-        <div class="input-section">
-          <form action=""></form>
+        <div class="form-section">
+          <form action="">
+            <div class="input-section">
+              <div class="dmy-input">
+                <label for="day">Day</label>
+                <input type="number" placeholder="DD" id="day" />
+                <small></small>
+              </div>
+              <div class="dmy-input">
+                <label for="month">Month</label>
+                <input type="number" placeholder="MM" id="month" />
+                <small></small>
+              </div>
+              <div class="dmy-input">
+                <label for="year">Year</label>
+                <input type="number" placeholder="YYYY" id="year" />
+              </div>
+            </div>
+            <div class="submit-section">
+              <hr />
+              <button type="submit" class="submit-bt">
+                <img src="./assets/images/icon-arrow.svg" alt="submit icon" />
+              </button>
+            </div>
+          </form>
         </div>
-        <div class="output-section"></div>
+        <div class="display-section">
+          <h1><span class="yy">-- </span>years</h1>
+          <h1><span class="mm">-- </span>months</h1>
+          <h1><span class="dd">-- </span>days</h1>
+        </div>
       </div>
     </div>
 
@@ -40,7 +66,7 @@
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by <a href="https://twitter.com/amosuzuagie">@amosuzuagie</a>.
     </div>
 
     <script src="script.js"></script>
