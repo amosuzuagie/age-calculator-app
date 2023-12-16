@@ -107,7 +107,7 @@ hr {
 
 @media (min-width: 576px) {
   .card {
-    width: 600px;
+    width: 500px;
   }
   .input-section {
     margin-bottom: 1rem;
@@ -122,6 +122,16 @@ hr {
     position: revert;
     justify-content: end;
   }
+  .display-section h1 {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 700px) {
+  .card {
+    width: 600px;
+  }
+
   .display-section h1 {
     font-size: 5rem;
   }
